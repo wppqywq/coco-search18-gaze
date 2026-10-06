@@ -1,0 +1,35 @@
+# Local datasets, feature caches and dependencies.
+/data/
+/.deps/
+/.venv/
+/venv/
+/vendor/gbvs-master/
+
+# Local recovery material and generated publication directory.
+/archive/
+/outputs/
+/public/
+
+# Python, editor and operating-system caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+*.swp
+
+# Local traces, predictions, logs and atomic write files.
+/reports/**/*.npz
+/reports/**/*.nc
+/reports/**/*.log
+/reports/**/*.tmp
+/reports/hierarchical/launch.json
+/reports/hierarchical/smoke-*/
+
+# Local configuration and credentials.
+.env
+.env.*
+!.env.example
+/.aws/

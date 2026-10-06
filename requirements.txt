@@ -1,0 +1,14 @@
+# Installed Python 3.11 numerical runtime; not a clean-install lockfile.
+# Earlier penalized fits used a separate environment.
+numpy==2.2.6
+scipy==1.13.1
+torch==2.7.1
+threadpoolctl==3.6.0
+matplotlib==3.10.3
+pymc==5.28.2
+pytensor==2.38.2
+arviz==0.23.4
+numba==0.61.2
+h5netcdf==1.8.1
+# Optional local GBVS checks additionally need OpenCV and scikit-learn.
+# GBVS itself is not redistributed in the publication snapshot.

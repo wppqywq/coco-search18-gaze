@@ -1,0 +1,168 @@
+{
+  "backbone": "Frozen torchvision ResNet18 ImageNet weights; layer4; 448x280 input; bilinear 20x32 feature grid; cosine target crop prototype. Project simplification, not IVSN replication.",
+  "saliency_version": "5c947fd7d078fd6c42d22bfcb68e0329491d9240fb675b03f82e6b041c4161b2",
+  "factor_maps_sha256": "fd66e071a40015f1f09f75d4c2c082ece1ec246e50e1b323c2776995642ca6c3",
+  "weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "saliency": "shreelock/gbvs commit 4c7e3c58, defaults with constant/zero-map numerical guard; 420x263 input; area-averaged to 32x20; third-party port, not validated against MATLAB",
+  "target_template": "Only fit-image target crops; leave own image out for fit maps; no gaze used",
+  "proxy_auc": {
+    "dev": {
+      "knife": {
+        "n_images": 21,
+        "mean_target_vs_background_auc": 0.7095153714937921
+      },
+      "chair": {
+        "n_images": 41,
+        "mean_target_vs_background_auc": 0.7642977995301171
+      },
+      "sink": {
+        "n_images": 46,
+        "mean_target_vs_background_auc": 0.85563258079104
+      },
+      "toilet": {
+        "n_images": 32,
+        "mean_target_vs_background_auc": 0.9464531185529264
+      },
+      "keyboard": {
+        "n_images": 31,
+        "mean_target_vs_background_auc": 0.8150578010627013
+      },
+      "tv": {
+        "n_images": 47,
+        "mean_target_vs_background_auc": 0.9265113395834604
+      },
+      "fork": {
+        "n_images": 34,
+        "mean_target_vs_background_auc": 0.7325632330836432
+      },
+      "mouse": {
+        "n_images": 21,
+        "mean_target_vs_background_auc": 0.9012674440006482
+      },
+      "potted plant": {
+        "n_images": 25,
+        "mean_target_vs_background_auc": 0.8055011328822436
+      },
+      "car": {
+        "n_images": 14,
+        "mean_target_vs_background_auc": 0.7190743332646984
+      },
+      "bowl": {
+        "n_images": 23,
+        "mean_target_vs_background_auc": 0.8559848506991448
+      },
+      "cup": {
+        "n_images": 45,
+        "mean_target_vs_background_auc": 0.8068346549855375
+      },
+      "bottle": {
+        "n_images": 27,
+        "mean_target_vs_background_auc": 0.8019117844433646
+      },
+      "clock": {
+        "n_images": 21,
+        "mean_target_vs_background_auc": 0.9414410993093683
+      },
+      "laptop": {
+        "n_images": 19,
+        "mean_target_vs_background_auc": 0.9135975269081843
+      },
+      "microwave": {
+        "n_images": 33,
+        "mean_target_vs_background_auc": 0.8929218852813111
+      },
+      "oven": {
+        "n_images": 17,
+        "mean_target_vs_background_auc": 0.8940308861680217
+      },
+      "stop sign": {
+        "n_images": 20,
+        "mean_target_vs_background_auc": 0.9707897709624257
+      }
+    },
+    "fit": {
+      "tv": {
+        "n_images": 131,
+        "mean_target_vs_background_auc": 0.9254789041594536
+      },
+      "cup": {
+        "n_images": 136,
+        "mean_target_vs_background_auc": 0.8193431009005984
+      },
+      "oven": {
+        "n_images": 51,
+        "mean_target_vs_background_auc": 0.8924959032516636
+      },
+      "laptop": {
+        "n_images": 62,
+        "mean_target_vs_background_auc": 0.9210925896035215
+      },
+      "toilet": {
+        "n_images": 75,
+        "mean_target_vs_background_auc": 0.9109909486653085
+      },
+      "stop sign": {
+        "n_images": 57,
+        "mean_target_vs_background_auc": 0.9636773484960249
+      },
+      "clock": {
+        "n_images": 55,
+        "mean_target_vs_background_auc": 0.9181665387175332
+      },
+      "fork": {
+        "n_images": 121,
+        "mean_target_vs_background_auc": 0.6981027442323549
+      },
+      "chair": {
+        "n_images": 113,
+        "mean_target_vs_background_auc": 0.7531842393743737
+      },
+      "knife": {
+        "n_images": 69,
+        "mean_target_vs_background_auc": 0.7584965617490372
+      },
+      "bottle": {
+        "n_images": 78,
+        "mean_target_vs_background_auc": 0.7417167188998453
+      },
+      "bowl": {
+        "n_images": 68,
+        "mean_target_vs_background_auc": 0.7975555920831049
+      },
+      "mouse": {
+        "n_images": 47,
+        "mean_target_vs_background_auc": 0.9133867379409017
+      },
+      "car": {
+        "n_images": 55,
+        "mean_target_vs_background_auc": 0.795511914679084
+      },
+      "sink": {
+        "n_images": 139,
+        "mean_target_vs_background_auc": 0.8483428861184334
+      },
+      "keyboard": {
+        "n_images": 85,
+        "mean_target_vs_background_auc": 0.8163436292018822
+      },
+      "potted plant": {
+        "n_images": 78,
+        "mean_target_vs_background_auc": 0.7958774028154498
+      },
+      "microwave": {
+        "n_images": 64,
+        "mean_target_vs_background_auc": 0.9281665527362357
+      }
+    }
+  },
+  "run": "full",
+  "images": 2241,
+  "image_task_pairs": 2489,
+  "trials": 24880,
+  "split_images": {
+    "fit": 1340,
+    "dev": 455,
+    "test": 378,
+    "previous_test": 68
+  }
+}

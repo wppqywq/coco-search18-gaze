@@ -1,0 +1,162 @@
+{
+  "scope": "Explicitly requested reuse of the original full test; previously used by the older COCO study, not a new independent confirmation",
+  "authorization": "User requested test-set scoring on 2026-09-25",
+  "new_fits": 0,
+  "retuned_parameters": false,
+  "included_training_blocks": [
+    "full"
+  ],
+  "history": true,
+  "trials": 4137,
+  "choices": 8134,
+  "images": 378,
+  "participants": 10,
+  "models": {
+    "existing/shared_factors": {
+      "mean_log2_probability": -7.77371759211386,
+      "bits_over_uniform": 1.548210502773502,
+      "by_subject": {
+        "1": -7.9067857372961265,
+        "2": -7.828392418496174,
+        "3": -7.670547886696509,
+        "4": -7.758081937151858,
+        "5": -7.806083053874422,
+        "6": -7.676490857507643,
+        "7": -7.6659769448339015,
+        "8": -7.636864465861654,
+        "9": -7.9486287915763265,
+        "10": -7.794421060909715
+      }
+    },
+    "existing/personal": {
+      "mean_log2_probability": -7.769448021271717,
+      "bits_over_uniform": 1.5524800736156443,
+      "by_subject": {
+        "1": -7.906726989507696,
+        "2": -7.823174696149326,
+        "3": -7.670391079272141,
+        "4": -7.751801141875638,
+        "5": -7.806197262461448,
+        "6": -7.672567432966989,
+        "7": -7.661148573524054,
+        "8": -7.632768710120974,
+        "9": -7.93466957319527,
+        "10": -7.792791771358511
+      }
+    },
+    "spline/shared_factors": {
+      "mean_log2_probability": -7.771749765000332,
+      "bits_over_uniform": 1.5501783298870295,
+      "by_subject": {
+        "1": -7.904891098767404,
+        "2": -7.81865840118573,
+        "3": -7.670670522026192,
+        "4": -7.761812424201812,
+        "5": -7.802298345375526,
+        "6": -7.668048810906892,
+        "7": -7.660414421642809,
+        "8": -7.636956526567397,
+        "9": -7.954539069060528,
+        "10": -7.792913667290032
+      }
+    },
+    "spline/personal": {
+      "mean_log2_probability": -7.767574681938886,
+      "bits_over_uniform": 1.5543534129484762,
+      "by_subject": {
+        "1": -7.9044683263914814,
+        "2": -7.813329926198975,
+        "3": -7.670182850486985,
+        "4": -7.755843154780108,
+        "5": -7.802375329120786,
+        "6": -7.664634674680611,
+        "7": -7.655846239568801,
+        "8": -7.632834430499978,
+        "9": -7.941302275291764,
+        "10": -7.791097476478519
+      }
+    }
+  },
+  "contrasts": {
+    "personal_gain_existing": {
+      "mean": 0.004269570842141719,
+      "crossed_bootstrap_95_percentile_interval": [
+        -0.0005964443641300606,
+        0.009504231455380588
+      ],
+      "n_subjects": 10,
+      "n_image_groups": 378,
+      "replicates": 2000
+    },
+    "personal_gain_spline": {
+      "mean": 0.004175083061446506,
+      "crossed_bootstrap_95_percentile_interval": [
+        -0.000550409746474792,
+        0.009026294789074818
+      ],
+      "n_subjects": 10,
+      "n_image_groups": 378,
+      "replicates": 2000
+    },
+    "spline_gain_shared_factors": {
+      "mean": 0.0019678271135267966,
+      "crossed_bootstrap_95_percentile_interval": [
+        -0.003846471006369241,
+        0.008196616099298684
+      ],
+      "n_subjects": 10,
+      "n_image_groups": 378,
+      "replicates": 2000
+    },
+    "spline_gain_personal": {
+      "mean": 0.0018733393328315847,
+      "crossed_bootstrap_95_percentile_interval": [
+        -0.0037845587954449173,
+        0.007885304151096175
+      ],
+      "n_subjects": 10,
+      "n_image_groups": 378,
+      "replicates": 2000
+    },
+    "interaction": {
+      "mean": -9.448778069521166e-05,
+      "crossed_bootstrap_95_percentile_interval": [
+        -0.00055120497532721,
+        0.0003210986760730984
+      ],
+      "n_subjects": 10,
+      "n_image_groups": 378,
+      "replicates": 2000
+    }
+  },
+  "verification": {
+    "primary_dev_predictions_reproduced": 40052,
+    "max_absolute_error_bits": 0.0,
+    "fit_dev_previous_test_overlap": 0
+  },
+  "source_sha256": "733dbb3f2cfa55876be39a870b84f4066a39c024e6ef9b9cc4f94e925bb148b3",
+  "comparison_sha256": "e43bcda031127f4f8e9b3019f1f824b4bce800bf83013b724f318f9f115f5f62",
+  "inputs": {
+    "frozen_manifests_verified": 3,
+    "factor_maps_sha256": "fd66e071a40015f1f09f75d4c2c082ece1ec246e50e1b323c2776995642ca6c3",
+    "saliency_version": "5c947fd7d078fd6c42d22bfcb68e0329491d9240fb675b03f82e6b041c4161b2",
+    "images_by_split": {
+      "fit": 1340,
+      "dev": 455,
+      "test": 378,
+      "previous_test": 68
+    },
+    "accessible_gaze_splits": [
+      "fit",
+      "dev"
+    ],
+    "test_scored": false
+  },
+  "test_scored": true,
+  "limitations": [
+    "Intervals condition on already selected and fitted models; no refitting in bootstrap.",
+    "Ten participants and prior use of this test limit confirmatory interpretation.",
+    "All four models include personal spatial controls; personal here adds only target/distance offsets."
+  ],
+  "predictions_sha256": "80ece94f1695e40515b2aa87c55a7b1f131c1371a499822cbb68302066b0e712"
+}

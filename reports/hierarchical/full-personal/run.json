@@ -1,0 +1,91 @@
+{
+  "status": "diagnostic_failed",
+  "pid": 11164,
+  "block": "full",
+  "personal": true,
+  "prior_scale": 0.5,
+  "tune": 1000,
+  "draws": 1000,
+  "chains": 4,
+  "seed": 20260925,
+  "choices": 29434,
+  "test_scored": false,
+  "purpose": "full_data_posterior",
+  "protected_sha256": {
+    "infer_hierarchical.py": "aead2b3085905b977e86aa8627b2c567d3e92ac8a2f6bb787ee55fbb35a8791f",
+    "reports/hierarchical-protocol.md": "0b12d8e6f15c13515f32204060bfbdb55eae82880a9614e2556d5c1cbbeeb176",
+    "data/processed/hierarchical-v2/manifest.json": "895ebac5d117e16006f861fd05371a476b86296cbf854467c91297072f4fe16d",
+    "reports/comparison.json": "e43bcda031127f4f8e9b3019f1f824b4bce800bf83013b724f318f9f115f5f62"
+  },
+  "pymc": "5.28.2",
+  "chain_progress": {
+    "0": {
+      "iteration": 2000,
+      "warmup": false,
+      "diverging": false,
+      "leapfrog_steps": 63.0,
+      "seconds": 6255.045669794083
+    },
+    "1": {
+      "iteration": 2000,
+      "warmup": false,
+      "diverging": false,
+      "leapfrog_steps": 63.0,
+      "seconds": 12350.800654649734
+    },
+    "2": {
+      "iteration": 2000,
+      "warmup": false,
+      "diverging": false,
+      "leapfrog_steps": 127.0,
+      "seconds": 29790.197366952896
+    },
+    "3": {
+      "iteration": 2000,
+      "warmup": false,
+      "diverging": false,
+      "leapfrog_steps": 31.0,
+      "seconds": 36953.259967803955
+    }
+  },
+  "runtime": {
+    "python": "<local-path>",
+    "python_version": "3.11.8 | packaged by conda-forge | (main, Feb 16 2024, 20:49:36) [Clang 16.0.6 ]",
+    "packages": {
+      "pymc": "5.28.2",
+      "pytensor": "2.38.2",
+      "arviz": "0.23.4",
+      "numba": "0.61.2",
+      "numpy": "2.2.6",
+      "scipy": "1.13.1"
+    }
+  },
+  "seconds": 36957.14045166969,
+  "likelihood_seconds": [
+    0.20279598236083984,
+    0.07020807266235352,
+    0.0665428638458252
+  ],
+  "sampler_geometry": "Exact fit-data Fisher matrix plus prior curvature; adaptive full covariance",
+  "initial_covariance_eigenvalues": [
+    1.7666779394904735e-05,
+    1.0007541637869153
+  ],
+  "diagnostics": {
+    "max_rhat": 1.2746825503708399,
+    "min_bulk_ess": 11.145040247379047,
+    "min_tail_ess": 34.51979584850026,
+    "divergences": 0,
+    "max_depth_hits": 2,
+    "bfmi": [
+      1.2736825304584778,
+      1.1662378327326084,
+      1.1359565123234325,
+      1.5289849418292696
+    ],
+    "finite": true,
+    "passed": false
+  },
+  "reload_exact": true,
+  "likelihood_evaluations": 447615
+}

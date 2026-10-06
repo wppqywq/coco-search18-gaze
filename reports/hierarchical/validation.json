@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "kind": "numerical_checks_on_real_fit_inputs",
+  "choices": 30,
+  "likelihood_absolute_error": 5.684341886080802e-14,
+  "likelihood_gradient_max_error": 3.900634037989903e-09,
+  "full_posterior_gradient_max_error": 8.779702520556043e-09,
+  "independent_full_log_density_error": 0.0,
+  "fisher_max_error": 3.744657917081895e-09,
+  "full_fit_likelihood_absolute_error": 8.731149137020111e-11,
+  "full_fit_gradient_directional_errors": [
+    4.1764145350953186e-06,
+    2.09255883021342e-06,
+    4.547731080606354e-09
+  ],
+  "dev_fitting_rejected": true,
+  "test_scored": false,
+  "pymc": "5.28.2",
+  "source_sha256": "aead2b3085905b977e86aa8627b2c567d3e92ac8a2f6bb787ee55fbb35a8791f"
+}
